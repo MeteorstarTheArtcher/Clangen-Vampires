@@ -133,7 +133,7 @@ class Sprites():
             'mackerelcolours', 'classiccolours', 'sokokecolours', 'agouticolours', 'singlestripecolours', 
             'shadersnewwhite', 'lineartdead', 'tortiepatchesmasks', 
             'medcatherbs', 'lineartdf', 'lightingnew', 'fademask',
-            'fadestarclan', 'fadedarkforest'
+            'fadestarclan', 'fadedarkforest', 'fang'
 
         ]:
             if 'lineart' in x and game.config['fun']['april_fools']:
@@ -148,6 +148,9 @@ class Sprites():
 
         self.make_group('lineartdead', (0, 0), 'lineartdead')
         self.make_group('lineartdf', (0, 0), 'lineartdf')
+
+        #Fangs
+        sprites.make_group('fang', (0,0), 'fang')
 
         # Fading Fog
         for i in range(0, 3):
